@@ -590,7 +590,7 @@
   #define BLTOUCH_HS_MODE
 
   // Safety: Enable voltage mode settings in the LCD menu.
-  #define BLTOUCH_LCD_VOLTAGE_MENU
+  //#define BLTOUCH_LCD_VOLTAGE_MENU
 
 #endif // BLTOUCH
 
@@ -1864,8 +1864,8 @@
 
   #if EITHER(SENSORLESS_HOMING, SENSORLESS_PROBING)
     // TMC2209: 0...255. TMC2130: -64...63
-    #define X_STALL_SENSITIVITY  6
-    #define Y_STALL_SENSITIVITY  6
+    #define X_STALL_SENSITIVITY  5
+    #define Y_STALL_SENSITIVITY  5
     //#define Z_STALL_SENSITIVITY  8
   #endif
 
