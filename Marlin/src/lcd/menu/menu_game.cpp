@@ -16,7 +16,7 @@
  * GNU General Public License for more details.
  *
  * You should have received a copy of the GNU General Public License
- * along with this program.  If not, see <http://www.gnu.org/licenses/>.
+ * along with this program.  If not, see <https://www.gnu.org/licenses/>.
  *
  */
 
@@ -29,7 +29,7 @@
 
 void menu_game() {
   START_MENU();
-  BACK_ITEM(MSG_MAIN);
+  BACK_ITEM(TERN(LCD_INFO_MENU, MSG_INFO_MENU, MSG_MAIN));
   #if ENABLED(MARLIN_BRICKOUT)
     SUBMENU(MSG_BRICKOUT, brickout.enter_game);
   #endif
